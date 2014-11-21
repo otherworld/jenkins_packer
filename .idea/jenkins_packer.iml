@@ -58,6 +58,7 @@
     <orderEntry type="library" scope="PROVIDED" name="plist (v3.1.0, RVM: ruby-2.1.4 [jenkins_packer]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry (v0.10.1, RVM: ruby-2.1.4 [jenkins_packer]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.5.2, RVM: ruby-2.1.4 [jenkins_packer]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v10.1.0, RVM: ruby-2.1.4 [jenkins_packer]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rest-client (v1.6.7, RVM: ruby-2.1.4 [jenkins_packer]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="retryable (v1.3.6, RVM: ruby-2.1.4 [jenkins_packer]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ridley (v4.1.0, RVM: ruby-2.1.4 [jenkins_packer]) [gem]" level="application" />

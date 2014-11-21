@@ -31,7 +31,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.json = {}
 
     chef.run_list = [
-        'recipe[jenkins_packer::default]'
+      'recipe[jenkins_packer::default]'
     ]
   end
 end
