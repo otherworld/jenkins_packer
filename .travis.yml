@@ -17,3 +17,4 @@ before_install:
 
 script:
   - bundle exec rake travis:ci
+  - bundle exec rake foodcritic

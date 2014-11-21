@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'chefspec',   '~> 4.0'
 gem 'berkshelf',  '~> 3.1'
+gem 'foodcritic'
 gem 'rake'
 
 group :integration do
