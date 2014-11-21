@@ -1,25 +1,24 @@
-# Added by ChefSpec
 require 'chefspec'
+require 'chefspec/berkshelf'
+require 'chefspec/cacher'
 
-# Uncomment to use ChefSpec's Berkshelf extension
-# require 'chefspec/berkshelf'
+# Require all our libraries
+Dir['libraries/*.rb'].each { |f| require File.expand_path(f) }
 
 RSpec.configure do |config|
-  # Specify the path for Chef Solo to find cookbooks
-  # config.cookbook_path = '/var/cookbooks'
+  config.log_level = :fatal
 
-  # Specify the path for Chef Solo to find roles
-  # config.role_path = '/var/roles'
+  # Guard against people using deprecated RSpec syntax
+  config.raise_errors_for_deprecations!
 
-  # Specify the Chef log_level (default: :warn)
-  # config.log_level = :debug
+  # Why aren't these the defaults?
+  config.filter_run focus: true
+  config.run_all_when_everything_filtered = true
 
-  # Specify the path to a local JSON file with Ohai data
-  # config.path = 'ohai.json'
+  # Set a default platform (this is overriden as needed)
+  config.platform  = 'ubuntu'
+  config.version   = '14.04'
 
-  # Specify the operating platform to mock Ohai data from
-  # config.platform = 'ubuntu'
-
-  # Specify the operating version to mock Ohai data from
-  # config.version = '12.04'
+  # Be random!
+  config.order = 'random'
 end
