@@ -23,7 +23,7 @@ This second details Pull Requests that we will **not** merge.
 
 1. New features without accompanying Test Kitchen tests
 1. New features without accompanying usage documentation
-1. Pull requests with a broken build (Travis will automatically mark the build as passing/failing on GitHub, but you can also check the build manually by visiting https://travis-ci.org/opscode-cookbooks/jenkins)
+1. Pull requests with a broken build (Travis will automatically mark the build as passing/failing on GitHub, but you can also check the build manually by visiting https://travis-ci.org/otherworld/jenkins_packer)
 
 
 Coding Standards
@@ -55,7 +55,7 @@ Process
 -------
 1. Clone the git repository from GitHub:
 
-        $ git clone git@github.com:opscode-cookbooks/jenkins.git
+        $ git clone git@github.com:otherworld/jenkins_packer.git
 
 2. Install the dependencies using bundler:
 
